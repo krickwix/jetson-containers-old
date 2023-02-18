@@ -1,0 +1,27 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: onnx-bench
+spec:
+  template:
+    spec:
+      containers:
+        - name: onnx
+          imagePullPolicy: Always
+          image: harbor.eticloud.io/gbear-public/jetson-infer:jp4
+          command: ["python3"]
+          args: ["import-onnx.py"]
+          env:
+          - name: AWS_ACCESS_KEY_ID
+            value: ""
+          - name: AWS_SECRET_ACCESS_KEY
+            value: ""
+          volumeMounts:
+          - mountPath: "/device-tree"
+            name: devtree
+      volumes:
+      - name: devtree
+        hostPath:
+          path: "/proc/device-tree"
+      restartPolicy: Never
+  backoffLimit: 0

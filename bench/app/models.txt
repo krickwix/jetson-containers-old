@@ -1,0 +1,52 @@
+version-RFB-320
+version-RFB-640
+AlexNet-qdq
+AlexNet
+CaffeNet-qdq
+CaffeNet
+DenseNet-121-12
+DenseNet-121
+EfficientNet-Lite4-int8
+EfficientNet-Lite4-qdq
+EfficientNet-Lite4
+GoogleNet-qdq
+GoogleNet
+Inception-1-qdq
+Inception-1
+Inception-2
+MNIST
+MNIST-12-int8
+MNIST-12
+MNIST
+MobileNet v2-1.0
+MobileNet v2-1.0-qdq
+MobileNet v2-1.0-fp32
+MobileNet v2-7
+R-CNN ILSVRC13
+ResNet18
+ResNet18-v2
+ResNet34
+ResNet34-v2
+ResNet50-caffe2
+ResNet50-qdq
+ResNet50-fp32
+ResNet50
+ResNet50-v2
+ShuffleNet-v1
+ShuffleNet-v2
+ShuffleNet-v2-qdq
+ShuffleNet-v2-fp32
+SqueezeNet 1.0
+SqueezeNet 1.0-qdq
+SqueezeNet 1.0
+SqueezeNet 1.1
+YOLOv2
+YOLOv3
+YOLOv3-12
+YOLOv4
+Candy
+Mosaic
+Pointilism
+Rain Princess
+Udnie
+Super_Resolution

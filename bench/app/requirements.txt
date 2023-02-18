@@ -1,0 +1,3 @@
+pandas
+onnx
+boto3

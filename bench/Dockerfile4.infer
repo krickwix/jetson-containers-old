@@ -1,0 +1,10 @@
+FROM nvcr.io/nvidia/l4t-pytorch:r32.7.1-pth1.10-py3
+
+RUN apt-get update || true ; apt-get -y upgrade ;apt-get -y install protobuf-compiler libprotobuf-dev pybind11-dev python3-pybind11
+RUN pip3 install pip --upgrade && \
+    wget https://nvidia.box.com/shared/static/pmsqsiaw4pg9qrbeckcbymho6c01jj4z.whl -O onnxruntime_gpu-1.11.0-cp36-cp36m-linux_aarch64.whl && \
+    pip3 install onnxruntime_gpu-1.11.0-cp36-cp36m-linux_aarch64.whl && \
+    rm -f onnxruntime_gpu-1.11.0-cp36-cp36m-linux_aarch64.whl
+COPY app/requirements4.txt /
+RUN pip3 install -r requirements4.txt
+COPY app/* /
