@@ -14,10 +14,6 @@ GoogleNet
 Inception-1-qdq
 Inception-1
 Inception-2
-MNIST
-MNIST-12-int8
-MNIST-12
-MNIST
 MobileNet v2-1.0
 MobileNet v2-1.0-qdq
 MobileNet v2-1.0-fp32
@@ -40,9 +36,6 @@ SqueezeNet 1.0
 SqueezeNet 1.0-qdq
 SqueezeNet 1.0
 SqueezeNet 1.1
-YOLOv2
-YOLOv3
-YOLOv3-12
 YOLOv4
 Candy
 Mosaic
